@@ -1,7 +1,5 @@
 {
-    "env": {
-      "SECRET_KEY": "seceret"
-    },
+   
     "scripts":{
         "dev":"nodemon server.js"
     }

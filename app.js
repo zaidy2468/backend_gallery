@@ -7,7 +7,7 @@ const morgan = require("morgan");
 const app = express();
 app.use(cors())
 mongoose.set('strictQuery',true);
-mongoose.connect('mongodb+srv://user_zaid:jWu7jeHM3yPaZQV@cluster0.pq5kg.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(process.env.MONGO_KEY);
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(morgan('dev'))
